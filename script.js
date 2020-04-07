@@ -55,8 +55,8 @@ console.log(parent);
   
 })
 //Use styling to transform pointer into a disk icon at the time of click event (saving of event)
-$("#9 .col-sm-10").val(localstorage.getItem("9");
-localStorage.getItem(JSON.parse(parent));
+$("#9 .col-sm-10").val(localstorage.getItem("9"))
+localStorage.getItem(JSON.parse(parent))
 
 
 });
