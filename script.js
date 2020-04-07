@@ -1,12 +1,11 @@
 //Add current date at the top of the planner 
 
-$(document).ready(function(){
-    $(window).load(function(){
-      let currentDay = (moment().format("dddd, MMMM Do"));
-        $('#currentDay').html(currentDay)
-        console.log( moment() );
-    });
-  });  
+$(document).ready(function() {
+  var date = moment().format('dddd MMMM Do');
+ console.log(date);
+ $('#currentDay').text(date);
+});
+
 
 //Create code that adds in business hours (9am - 5pm) into file for adding in hourly events to the left of the 
 //event text box
