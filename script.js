@@ -72,9 +72,9 @@ $(document).ready(function () {
 
   //Use styling to transform pointer into a disk icon at the time of click event (saving of event)
 
- // button.on('click', function (event) {
- //   $('selector').css('cursor', 'pointer')
- // })
+  button.on('click', function (event) {
+    $('selector').css('cursor', 'i')
+  })
   
 
 
