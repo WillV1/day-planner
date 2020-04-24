@@ -10,14 +10,6 @@ $(document).ready(function () {
   //Create code that adds in business hours (9am - 5pm) into file for adding in hourly events to the left of the 
   //event text box
 
-  //    moment().hour(i)
-  //    var hour = parseInt($(this).attr('.hour'));
-
-  //  for (var i = 9; i <= 10; i++) {
-  //      console.log(moment().hour(i).locale('en').format('hA'));
-  //        $('.hour').text(moment().hour(i).locale('en').format('hA'))
-
-  //    }
 
   //Set styling so that business hours that have passed are greyed out;  if / else for time component 
   //Set styling so that the current time/hour is a red color;
@@ -53,21 +45,21 @@ $(document).ready(function () {
 
   button.on('click', function (event) {
     event.preventDefault();
-    var text = $(this).siblings('.col-sm-10').val();
+    var text = $(this).siblings('.col-sm-10').val().replace(/['"]+/g, '');
     var parent = $(this).parent().attr('id');
     localStorage.setItem(parent, JSON.stringify(text));
 
   })
 
-  $('#9 textarea').val(localStorage.getItem('9'));
-  $('#10 textarea').val(localStorage.getItem('10'));
-  $('#11 textarea').val(localStorage.getItem('11'));
-  $('#12 textarea').val(localStorage.getItem('12'));
-  $('#13 textarea').val(localStorage.getItem('13'));
-  $('#14 textarea').val(localStorage.getItem('14'));
-  $('#15 textarea').val(localStorage.getItem('15'));
-  $('#16 textarea').val(localStorage.getItem('16'));
-  $('#17 textarea').val(localStorage.getItem('17'));
+  $('#9 textarea').val(localStorage.getItem('9').replace(/['"]+/g, ''));
+  $('#10 textarea').val(localStorage.getItem('10').replace(/['"]+/g, ''));
+  $('#11 textarea').val(localStorage.getItem('11').replace(/['"]+/g, ''));
+  $('#12 textarea').val(localStorage.getItem('12').replace(/['"]+/g, ''));
+  $('#13 textarea').val(localStorage.getItem('13').replace(/['"]+/g, ''));
+  $('#14 textarea').val(localStorage.getItem('14').replace(/['"]+/g, ''));
+  $('#15 textarea').val(localStorage.getItem('15').replace(/['"]+/g, ''));
+  $('#16 textarea').val(localStorage.getItem('16').replace(/['"]+/g, ''));
+  $('#17 textarea').val(localStorage.getItem('17')).replace(/['"]+/g, '');
 //  console.log(parent);
 
   //Use styling to transform pointer into a disk icon at the time of click event (saving of event)
