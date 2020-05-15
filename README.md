@@ -12,4 +12,4 @@ Bootstrap to generate the rows that would hold the hourly time blocks for data e
 
 Client-side local storage to allow the changes to the time blocks to persist upon reloading of the page.
 
-Please see deployed application at https://willv1.github.io/weather-app/index.html.
+Please see deployed application at https://willv1.github.io/day-planner/index.html.
