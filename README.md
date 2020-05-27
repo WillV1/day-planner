@@ -1,5 +1,7 @@
 # day-planner
 
+![badge](https://img.shields.io/badge/Skill-JS-yellow)
+
 Day Planner is an application that utilizes JQuery and Moment.js to provide the user a dynamic day planner, allowing the user to enter to-do tasks into hourly time blocks and save the to-do's for later access.
 
 I designed this application to demonstrate JQuery proficiency as well as proficiency to utilize client-side local storage functionality to store to-do tasks for brower persistence upon the user's brower refresh and later later retrieval.
